@@ -14,6 +14,8 @@ describe("User model", () => {
     const user = new User({
       email: "someone@example.com",
       password: "password",
+      name: "Johnny",
+      profilePic: "443hrehefsdHHDSHJDSDShfsdjfdhfdfsf.png",
     });
     expect(user.email).toEqual("someone@example.com");
   });
@@ -30,6 +32,8 @@ describe("User model", () => {
     const user = new User({
       email: "someone@example.com",
       password: "password",
+      name: "Johnny",
+      profilePic: "443hrehefsdHHDSHJDSDShfsdjfdhfdfsf.png",
     });
     expect(user.password).toEqual("password");
   });
