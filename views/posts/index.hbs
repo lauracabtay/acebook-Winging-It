@@ -44,13 +44,7 @@
       <p class="like-count">Liked by {{this.likers.length}} person</p>
     {{/if}}
   </div>
-
-  <div>
-    <p id="comment-count">Comment Count Here</p>
-  </div>
-
   <hr>
-
   <div id="interaction-buttons">
     <form action="/posts/liked" method="post">
       <input id="id" type="hidden" name="id" value="{{this._id}}">
