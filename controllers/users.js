@@ -5,7 +5,7 @@ const util = require("../util/photoHandling");
 
 const UsersController = {
   New: (req, res) => {
-    res.render("users/new", { hideNavbar: true });
+    res.render("users/new", { title: "Acebook", hideNavbar: true });
   },
 
   Edit: (req, res) => {

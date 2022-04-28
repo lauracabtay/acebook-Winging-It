@@ -5,11 +5,14 @@
   </div>
   <div id="new-session-form">
     <form action="/sessions" method="post">
-      <label id="email-label" for="email">Email: </label>
-      <input id="email-input" type="email" name="email" value="">
-      <br/>
-      <label id="password-label" for="password">Password: </label>
-      <input id="password-input" type="password" name="password" value="">
+      <div id="username-container">
+        <label id="email-label" for="email">Email: </label>
+        <input id="email-input" type="email" name="email" value="">
+      </div>
+      <div id="password-container">
+        <label id="password-label" for="password">Password: </label>
+        <input id="password-input" type="password" name="password" value="">
+      </div>
       <input id="login-page-button" type="submit" value="LOGIN">
     </form>
   </div>

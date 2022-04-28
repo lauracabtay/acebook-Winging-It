@@ -21,12 +21,8 @@
         {{else if (eq post.likers.length 1)}}
             <p class="like-count">Liked by {{post.likers.length}} person</p>
         {{/if}}
-        {{#if (gt post.commenters.length 1)}}
-            <p id="comment-count">{{ post.commenters.length }} comments</p>
-        {{else if (eq post.commenters.length 1)}}
-            <p id="comment-count">{{ post.commenters.length }} comment</p>
-        {{/if}}
-
+        <br>
+        <br>
         <hr>
 
         <form id="comment-form" action="/posts/comment/{{post._id}}/commented" method="post">
