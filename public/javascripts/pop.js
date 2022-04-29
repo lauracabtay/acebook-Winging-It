@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function showPopUp(title, message, type, next) {
   const popup = document.getElementById('popup');
   popup.classList = [`popup-show ${type}`];

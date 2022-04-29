@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 const User = require("../models/user");
 const Post = require("../models/post");
 const path = require("path");

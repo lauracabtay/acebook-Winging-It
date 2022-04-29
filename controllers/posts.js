@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const Post = require("../models/post");
 const Comment = require("../models/comment");
 const util = require("../util/photoHandling");
@@ -135,7 +136,7 @@ const PostsController = {
         throw err;
       }
       res.status(201).redirect("/posts/comment?id=" + req.params.id);
-	  return;
+        return;
     });
   },
 };
