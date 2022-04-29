@@ -511,7 +511,6 @@ opacity */
   flex-direction: column;
 }
 
-
 #submit-comment {
     align-self: flex-end;
     font-size: 16px;
@@ -618,7 +617,7 @@ opacity */
 
 #profile-page-username {
   text-align: center;
-  color: #c53a9d;
+  color:#ff8e80;
   font-family: 'Bebas Neue', cursive;
   font-size: 80px;
   margin-top: -60px;
@@ -788,6 +787,11 @@ opacity */
   width: 428px;
   margin: auto; 
   background-color: none;
+  padding-bottom: 15px;
+}
+
+#prof-post-header {
+  width: 400px;
 }
 
 .profile-col1-author-details {
@@ -796,8 +800,14 @@ opacity */
 }
 
 .profile-col2-user-buttons {
-  width: 180px;
+  width: 100px;
   float: right;
+}
+
+#prof-post-header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .prof-post-image {
