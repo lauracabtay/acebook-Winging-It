@@ -1,24 +1,30 @@
-<h1>Sign up to Acebook</h1>
-
-<form id="new-user-form" enctype="multipart/form-data" action="/users" method="post">
-
-  <label for="email">Email: </label>
-  <input id="email" type="email" name="email" value="">
-
-  <label for="password">Password: </label>
-  <input id="password" type="password" name="password" value="">
-
-  <br/><br/>
-
-  <label for="username">Username: </label>
-  <input id="username" type="text" name="username" value="">
-
-  <label for="profilePicture">Profile Picture: </label>
-  <input type="file" name="profilePicture" accept="image/*" />
-
-  <br/><br/>
-
-  <input id="submit" type="submit" value="Sign up">
-</form>
-<br/>
-<a href="/sessions/new">Already have an account? Log in</a>
+<div class="signup-page-content">
+  <div class="logo">
+    <h1 class="signup-title">{{title}}</h1>
+    <p id="signup-welcome-line">Share your world...</p>
+  </div>
+  <div id="new-user-form">
+    <form enctype="multipart/form-data" action="/users" method="post">
+      <div id="email-container">
+        <label id="email-label" for="email-label">Email: </label>
+        <input id="email-input" type="email" name="email" value="">
+      </div>
+      <div id="password-container">
+        <label id="password-label" for="password">Password: </label>
+        <input id="password-input" type="password" name="password" value="">
+        </div>
+      <div id="username-container">
+        <label id="username-label" for="username">Username: </label>
+        <input id="username-input" type="text" name="username" value="">
+      </div>
+      <div id="profile-pic-container">
+        <input type="file" name="profilePicture" id="uploadButton" accept="image/*" class="hidden"/>
+        <label id="profile-picture-label" for="uploadButton"><i class="fa-solid fa-upload"></i>  Upload Profile Picture</label>
+      </div>
+      <br>
+      <input id="signup-page-button" type="submit" value="SIGN UP"> 
+    </form>
+    <br/>
+  </div>
+  <a id="sign-up-tag" href="/sessions/new">Already have an account? Log in</a> <!-- get css from login-tag -->
+</div>
