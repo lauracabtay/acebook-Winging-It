@@ -20,8 +20,8 @@ app.set("port", port);
  * Connect to MongoDB
  **/
 
-var mongoDbUrl = process.env.MONGODB_URL || "mongodb://127.0.0.1/acebook";
-mongoose.connect(mongoDbUrl, {
+var mongoDbUri = process.env.MONGODB_URI || "mongodb://127.0.0.1/acebook";
+mongoose.connect(mongoDbUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
