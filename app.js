@@ -20,7 +20,7 @@ const app = express();
 
 app.listen(PORT, () => {
   herokuAwake(url);
-}
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
