@@ -7,13 +7,20 @@ const logger = require("morgan");
 const session = require("cookie-session");
 const methodOverride = require("method-override");
 const hbsHelpers = require("./handlebars_helpers");
-
+const herokuAwake = require("heroku-awake");
 const homeRouter = require("./routes/home");
 const postsRouter = require("./routes/posts");
 const sessionsRouter = require("./routes/sessions");
 const usersRouter = require("./routes/users");
 
+const PORT = 3000;
+const url = "https://acebook-winging-it.herokuapp.com/";
+
 const app = express();
+
+app.listen(PORT, () => {
+  herokuAwake(url);
+}
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
